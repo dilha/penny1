@@ -716,7 +716,7 @@ a {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 520px) {
     .page__text {
         font-size: 13px;
         line-height: 15px;
@@ -920,6 +920,16 @@ a {
     .credit__banks-img {
         max-width: 35px;
         max-height: 30px;
+    }
+}
+
+@media(max-width: 370px) {
+    .credit__img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    .credit__bottom {
+        margin-top: 20px;
     }
 }
 
