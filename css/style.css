@@ -354,7 +354,7 @@ a {
           align-items: center;
   font-size: 24px;
   line-height: 30px;
-  color: #4c5867;
+  color: #afb7c2;
   font-family: "Lato-Regular";
 }
 .select__current img, .select__item img {
@@ -387,6 +387,9 @@ a {
 
 /* country end */
 /* credit start */
+.credit {
+  padding-bottom: 20px;
+}
 .credit__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,7 +490,19 @@ a {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 5px;
-  list-style: disc;
+}
+.credit__info-item {
+  position: relative;
+}
+.credit__info-item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  background-color: #afb7c2;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 .credit__bottom {
   display: -webkit-box;
@@ -603,6 +618,10 @@ a {
     line-height: 18px;
   }
 
+  .credit__info-item::before {
+    left: -15px;
+  }
+
   .credit__item {
     padding: 20px 10px;
   }
@@ -673,6 +692,15 @@ a {
     height: 25px;
   }
 
+  .credit__encouraged::before {
+    width: 15px;
+    height: 15px;
+  }
+
+  .credit__encouraged {
+    padding-left: 25px;
+  }
+
   .credit__btn {
     padding: 10px;
     font-size: 11px;
@@ -695,7 +723,7 @@ a {
     max-height: 30px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -751,8 +779,21 @@ a {
     margin-top: 80px;
   }
 
+  .select__current p, .select__item p {
+    padding-left: 10px;
+  }
+
+  .select__current img, .select__item img {
+    margin-right: 10px;
+  }
+
   .select__arrow {
-    padding: 17px 15px 10px 15px;
+    padding: 15px 15px 10px 15px;
+  }
+
+  .select__arrow img {
+    width: 15px;
+    height: 10px;
   }
 
   .select__header {
@@ -761,6 +802,7 @@ a {
 
   .select__body {
     width: 93%;
+    padding: 20px 10px;
   }
 
   .select__current,
@@ -769,11 +811,15 @@ a {
     line-height: 25px;
   }
 
-  .credit__loan::before {
-    width: 15px;
-    height: 15px;
-    top: 0;
-    left: -17px;
+  .credit__info-item {
+    margin-left: 20px;
+  }
+
+  .credit__info-item::before {
+    top: 2px;
+    left: -10px;
+    width: 5px;
+    height: 5px;
   }
 
   .credit__top {
@@ -785,28 +831,43 @@ a {
     line-height: 20px;
   }
 
-  .credit__banks {
-    position: absolute;
-    left: 10px;
-    bottom: 20px;
+  .credit__img {
+    max-width: 100px;
+    margin-bottom: 15px;
   }
 
-  .credit__info {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    max-width: 190px;
+  .credit__bottom {
+    margin-top: 30px;
   }
 
   .credit__btn {
-    margin-left: auto;
+    font-size: 8px;
+    padding: 5px;
   }
 
-  .credit__img {
-    margin-bottom: 10px;
+  .credit .page__text {
+    font-size: 11px !important;
+    line-height: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .credit__item {
+    padding: 15px 10px;
   }
 
-  .credit__encouraged {
-    margin-bottom: 20px;
+  .credit .page__text {
+    font-size: 9px !important;
+    line-height: 10px;
+  }
+
+  .credit__btn {
+    font-size: 5px;
+    padding: 5px;
+  }
+
+  .credit__banks-img {
+    max-width: 35px;
+    max-height: 30px;
   }
 }
 /* meadia end */
