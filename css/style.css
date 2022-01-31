@@ -60,7 +60,7 @@ html.dark {
   --color-select-bg: #fff;
   --color-text: #fff;
   --color-span: #fff;
-  --color-item-bg: #afb7c2;
+  --color-item-bg: #d0d5db;
 }
 
 *,
@@ -448,7 +448,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 41px;
+  border-radius: 31px;
   background-color: var(--color-item-bg);
   padding: 30px 20px;
   color: #4c5867;
